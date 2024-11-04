@@ -1,0 +1,26 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[scripts]
+dev = "fastapi dev"
+
+[packages]  
+fastapi = {extras = ["standard"]}
+sqlalchemy = "*"
+pydantic-settings = "*"
+psycopg = "*"
+uvicorn = "*"
+psycopg-binary = "*"
+pydantic = {extras = ["email"] }
+httpx = "*"
+psycopg2-binary = "*"
+uuid = "*"
+
+[dev-packages]
+pytest = "*"
+testcontainers = { extras = ["postgres", "redis"]}
+
+[requires]
+python_version = "3.11"
