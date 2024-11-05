@@ -6,7 +6,7 @@
 
 Congratulations on being selected to take the onfabric full-stack take home test. This project is carefully devised to test your understanding and experience of full-stack development. We've opted for a stack that remembles the onfabric stack:
 
-- `/frontent` is a `typescript+nextjs` app
+- `/frontend` is a `typescript+nextjs` app
 - `/backend` is a `python+FastAPI` api
 
 ### Getting started
@@ -26,7 +26,7 @@ If you can't get to this point, there's no shame in reaching back out to us for 
 If you wish to run the next app outside of the docker container you'll need to:
 
 ```
-> cd frontent
+> cd frontend
 > npm i
 > npm run dev
 ```
