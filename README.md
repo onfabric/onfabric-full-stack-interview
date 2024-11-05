@@ -4,7 +4,7 @@
 
 ### Intro
 
-Congratulations on being selected to take the onfabric full-stack take home test. This project is carefully devised to test your understanding and experience of full-stack development. We've opted for a stack that remembles thr onfabric stack:
+Congratulations on being selected to take the onfabric full-stack take home test. This project is carefully devised to test your understanding and experience of full-stack development. We've opted for a stack that remembles the onfabric stack:
 
 - `/frontent` is a `typescript+nextjs` app
 - `/backend` is a `python+FastAPI` api
@@ -12,7 +12,6 @@ Congratulations on being selected to take the onfabric full-stack take home test
 ### Getting started
 
 To run locally, make sure your docker daemon is running, and run the following in the root of the project.
-
 ```
 > docker-compose up
 ```
@@ -32,7 +31,7 @@ If you wish to run the next app outside of the docker container you'll need to:
 > npm run dev
 ```
 
-Or the FastAPI
+or FastAPI
 
 ```
 > cd backend
@@ -77,9 +76,9 @@ You will notice that a `Dashboard Key : 6471f3f8-c742-4e21-9bd8-f2bf4d07eb3a` co
 
 ### Before we begin
 
-We're not primarily interested in how well you know `next` or `fastapi`. If you're a next pro, you'll notice that (almost) all the components in the `next` app are client components (yuck). This is to not disadvantage anyone who might be a react wiz, but not familair with RSC and `next`. We're trying to understand how well you understand the relationship between the server and the client, and if you can take requirements and turn them into code.
+We're not primarily interested in how well you know `next` or `fastapi`. If you're a next pro, you'll notice that (almost) all the components in the `next` app are client components. This is to not disadvantage anyone who might be a react wiz, but not familair with RSC and `next`. We're trying to get a feeling for how well you understand the relationship between the server and the client, and if you can take requirements and turn them into code.
 
-Please don't spend more than 3-4 hours on this.
+Please don't spend more than 3-4 hours on this. If you can't get through all the tasks, that's fine.
 
 Feel free to add any additional packages to help you complete the tasks (though no additional packages are required).
 
@@ -91,7 +90,7 @@ Good luck!
 
 A test is broken, fix it.
 
-## Task 2: Better request logging
+### Task 2: Better request logging
 
 Currently, we're not logging a lot in the `UserRequests`, can you:
 
@@ -99,16 +98,27 @@ Currently, we're not logging a lot in the `UserRequests`, can you:
 - Update the API interface to expose these new fields to the frontend
 - Update the types / table columns in the front end to show these new fields.
 
-## Task 3: Pagination
+### Task 3: Pagination
 
 You will have noticed by now that we are reading in _a lot_ of data when we ask for the user requests. You're job is to paginate the user requests so the client only has 10 items in the state at a time.
 
 (If you're not familair with `sqlalchemy` you might want to look at the methods `offset` and `limit`).
 
-## Task 4: UI
+### Task 4: Polling
 
-The UI looks really bad - fix it.
+When we make requests with a key, we don't see the change in the UI until we reload the page or toggle selected api keys. While an api key is selected, poll the user requests for that key every 5 seconds. We should be able to see in the UI that we are re-fetching the requests.
 
-## Task 5: User Requests Download
+### Task 5: User requests download
 
-Add the ability to download the user requests table from the frontend.
+Add the ability to download the user requests table from the frontend as a csv.
+
+### Task 6: Order requests by duration
+
+Add the ability to sort the table by request latency. Don't worry about editing the `Table` component, a toggle above the table is fine.
+
+### Task 7: Charts (optional if you have time)
+
+With a charting library of your choice, visualise the request latency in a chart below the `userRequest` table. Determine the most useful visualisation of this data.
+
+## Thanks!
+When you're done with the task, create a new (private) github repo and add @jskerman + fire through an email notifying us that you're complete and ready for review.
