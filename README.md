@@ -68,6 +68,8 @@ You'll find the `CRUD` operations related to these models here: `/backend/app/cr
 
 You'll find the api routes here: `/backend/app/api/routes/`.
 
+You'll find the middleware here: `/backend/app/middleware.py`.
+
 And the schemas (pydantic models) that defined the api interfeces here: `/backend/app/schema.py`.
 
 I'll spare you an explaination of the frontend as there's nothing special going on there. If you have no idea what you're looking at I reccomend going and reading the first page of the `next` docs for app router. If you're familair with react you should have no issues.
