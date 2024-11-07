@@ -90,7 +90,7 @@ Good luck!
 
 ### Task 1: Warm-up
 
-A test is broken, fix it.
+Some tests are broken, fix them.
 
 ### Task 2: Better request logging
 
@@ -112,7 +112,7 @@ When we make requests with a key, we don't see the change in the UI until we rel
 
 ### Task 5: User requests download
 
-Add the ability to download the user requests table from the frontend as a csv.
+Add the ability to download the user requests from the frontend as a csv.
 
 ### Task 6: Order requests by duration
 
