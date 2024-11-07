@@ -108,7 +108,7 @@ def test_read_user_requests(client: TestClient, db: Session, api_key: models.Api
         db.add(request)
     db.commit()
 
-    response = client.get(f"/user/keys/{api_key.id}/requests?skip=1&limit=2", headers={"X-API-Key": api_key.key})
+    response = client.get(f"/user/keys/{api_key.id}/requests", headers={"X-API-Key": api_key.key})
     assert response.status_code == 200
     
     data = response.json()
